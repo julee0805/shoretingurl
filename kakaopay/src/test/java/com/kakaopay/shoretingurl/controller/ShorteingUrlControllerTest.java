@@ -69,8 +69,8 @@ class ShorteingUrlControllerTest {
 					.andExpect(status().is(HttpStatus.OK.value()))
 					.andExpect(view().name("index"))
 					.andExpect(model().attributeExists("msg"))
-					.andExpect(model().attribute("msg","url : "+shorteingUrlService.getShorteingUrlByUrl(url).getShortUrl()));
-	
+					.andExpect(model().attribute("msg","Url : "+ shorteingUrlService.getShorteingUrlByUrl(url).getUrl() +" Shorturl : "+shorteingUrlService.getShorteingUrlByUrl(url).getShortUrl()));
+
 	}
 	
 	@Test
