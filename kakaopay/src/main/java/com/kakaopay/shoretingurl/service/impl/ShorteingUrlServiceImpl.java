@@ -56,14 +56,14 @@ public class ShorteingUrlServiceImpl implements ShorteingUrlService {
 	public String getShorteingUrl() throws Exception {
 		
 		long shortUrl;
-		long date = System.currentTimeMillis()*10;
-		long ranNum = (int)(Math.random()*9)+1;
+		long date;
+		long ranNum; 
 		
 		String returnStr;
 
 		do{		
 			date = System.currentTimeMillis()*10;
-			ranNum = (int)(Math.random()*9)+1;
+			ranNum = (long)(Math.random()*9)+1;
 			shortUrl = date+ranNum;
 			returnStr = Base62.encodeToLong(shortUrl);
 		

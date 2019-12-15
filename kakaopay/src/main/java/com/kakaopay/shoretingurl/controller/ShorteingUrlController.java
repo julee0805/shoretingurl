@@ -52,7 +52,7 @@ public class ShorteingUrlController {
     			
     		if(urlValidator.isValid(url)) {
     			if(ObjectUtils.isEmpty(shorteingUrl)) shorteingUrl = shorteingUrlService.setShorteingUrl(url);
-        			model.addAttribute("msg","url : " + shorteingUrl.getShortUrl());
+        			model.addAttribute("msg","Url : "+shorteingUrl.getUrl()+" Shorturl : " + shorteingUrl.getShortUrl());
     		}else {
     			model.addAttribute("msg","유효하지 않은 주소입니다. 다시 확인해주세요  ex) https://www.daum.net");
     		}
