@@ -11,9 +11,9 @@ URL을 입력받아 짧게 줄여주고, Shortening 된 URL 을 입력하면 원
 
 ### 구현
 * URL 입력폼 제공 및 결과 출력은 단일 페이지 사용
-* URL 등록 시 시스템 시간 + 난수 를 사용하여 base62로 encoding(8 Chracter)
+* URL 등록 시 시스템 시간 + 난수 를 사용하여 base62로 encoding(8 Character)
 * 동일 URL인 경우 동일한  Shortening Key 조회
-* Shortening URL 호출 시 원래 URL로 REDIRECT
+* Shortening URL 호출 시 원래 URL로 redirect
 
 ### 실행
 * java 1.8 이상 설치
