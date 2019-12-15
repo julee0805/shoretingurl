@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; chrset=UTF-8" />
+<title>TEST</title>
+<body>
+<p th:text="${msg}"> wait.</p>
+<form method="POST" action="/setShortUrl">
+	<input type="text" name="url" th:value="${id2}"/>
+	<input type="submit" value"Click"/>
+</form>
+</body>
+</html>
