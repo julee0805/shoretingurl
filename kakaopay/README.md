@@ -21,6 +21,7 @@ URL을 입력받아 짧게 줄여주고, Shortening 된 URL 을 입력하면 원
 * mvnw package 명령 실행
 * 빌드 완료 후 target 아래의 kakaopay-0.0.1-SNAPSHOT.war 파일을 다음의 명령으로 실행
 * java -jar kakaopay-0.0.1-SNAPSHOT.war
+* http://localhost:8080 으로 접속
 
 ### 사용기술
 * Java 1.8
